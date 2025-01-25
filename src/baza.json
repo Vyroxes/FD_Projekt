@@ -1,0 +1,90 @@
+{
+  "book-collection": [
+    {
+      "id": "1",
+      "tytul": "Metro 2033",
+      "autor": "Dmitry Glukhovsky",
+      "obraz": "metro_2033.jpg",
+      "gatunki": "fantasy, science fiction",
+      "wydawnictwo": "Insignis",
+      "data_wydania": "2018-10-17",
+      "liczba_stron": "578",
+      "isbn": "9788366071308",
+      "ocena": "8.7",
+      "recenzja": "Świetna książka",
+      "opis": "Czy kiedykolwiek przyszło ci do głowy, że ostatni epizod historii cywilizacji człowieka rozegra się w przejmującej atmosferze moskiewskiego metra? Czy człowiek, który w marzeniach sięgał gwiazd, godzien jest skończyć jak szczur, sto metrów pod ziemią? Mało prawdopodobne? Po przeczytaniu „Metra 2033” – rosyjskiego, kultowego już bestsellera, który zawładnął wyobraźnią ponad dwuipółmilionowej rzeszy czytelników – na pewno zmienisz zdanie. Ten thriller SF, którego wartka akcja i niezwykle sugestywnie przedstawiony świat nie pozwolą ci się od niego oderwać aż do ostatniej strony, to nie tylko wspaniała rozrywka i uczta dla czytelnika. To także portret człowieka u schyłku cywilizacji; przejmująca analiza jego niezmiennej natury. To obraz świata po końcu świata. Rok 2033. W wyniku konfliktu atomowego świat uległ zagładzie. Ocaleli tylko nieliczni, chroniący się w moskiewskim metrze, które dzięki unikalnej konstrukcji stało się najprawdopodobniej ostatnim przyczółkiem ludzkości. Na mrocznych stacjach, rozświetlanych światłami awaryjnymi i blaskiem ognisk, ludzie ci próbują wieść życie zbliżone do tego sprzed katastrofy. Tworzą mikropaństwa spajane ideologią, religią czy po prostu ochroną filtrów wodnych... Zawierają sojusze, toczą wojny. WOGN to wysunięta najbardziej na północ zamieszkała stacja metra. Kiedyś była jedną z najpiękniejszych, a po zagładzie przez długi czas pozostawała bezpieczna. Teraz pojawiło się na niej śmiertelne niebezpieczeństwo. Artem, młody mężczyzna z WOGN-u, otrzymuje zadanie: musi przedostać się do legendarnej stacji Polis, serca moskiewskiego metra, aby przekazać ostrzeżenie o nowym niebezpieczeństwie. Od powodzenia jego misji zależy przyszłość nie tylko peryferyjnej stacji, ale być może całej ocalałej w metrze ludzkości."
+    },
+    {
+      "id": "2",
+      "isbn": "9780141046303",
+      "tytul": "Assassin's Creed",
+      "autor": "Oliver Bowden",
+      "obraz": "http://books.google.com/books/content?id=cDBLawoDYC8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "wydawnictwo": "Penguin UK",
+      "data_wydania": "2009-11-26",
+      "liczba_stron": 414,
+      "opis": "'I will seek Vengeance upon those who betrayed my family. I am Ezio Auditore da Firenze. I am an Assassin...' Betrayed by the ruling families of Italy, a young man embarks upon an epic quest for vengeance. To eradicate corruption and restore his family's honour, he will learn the art of the assassins. Along the way, Ezio will call upon the wisdom of such great minds as Leonardo Da Vinci and Niccolo Machiavelli - knowing that survival is bound to the skills by which he must live. To his allies, he will become a force for change - fighting for freedom and justice. To his enemies, he will become a threat dedicated to the destruction of the tyrants abusing the people of Italy. So begins an epic story of power, revenge and conspiracy. TRUTH WILL BE WRITTEN IN BLOOD",
+      "gatunki": "fantasy, przygoda, sensacja, na podstawie gry",
+      "ocena": "-",
+      "recenzja": "Brak recenzji"
+    },
+    {
+      "id": "3",
+      "isbn": "9781781100486",
+      "tytul": "Harry Potter and the Sorcerer's Stone",
+      "autor": "J.K. Rowling",
+      "obraz": "http://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "wydawnictwo": "Pottermore Publishing",
+      "data_wydania": "2015-12-08",
+      "liczba_stron": "311",
+      "opis": "Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'. Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin! Having become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.",
+      "gatunki": "fantasy",
+      "ocena": "-",
+      "recenzja": "Brak recenzji"
+    },
+    {
+      "id": "4",
+      "isbn": "9781338878929",
+      "tytul": "Harry Potter and the Sorcerer's Stone (Harry Potter, Book 1)",
+      "autor": "J. K. Rowling",
+      "obraz": "http://books.google.com/books/content?id=ZiJMzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "wydawnictwo": "Scholastic Incorporated",
+      "data_wydania": "2023-05-02",
+      "liczba_stron": 400,
+      "opis": "Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility. All he knows is a miserable life with the Dursleys, his horrible aunt and uncle, and their abominable son, Dudley - a great big swollen spoiled bully. Harry's room is a tiny closet at the foot of the stairs, and he hasn't had a birthday party in eleven years. But all that is about to change when a mysterious letter arrives by owl messenger: a letter with an invitation to an incredible place that Harry - and anyone who reads about him - will find unforgettable.",
+      "gatunki": "fantasy",
+      "ocena": "-",
+      "recenzja": "Brak recenzji"
+    }
+  ],
+  "wish-list": [
+    {
+      "id": "1",
+      "isbn": "9788375780635",
+      "tytul": "Wiedźmin. Ostatnie Życzenie. Tom 1",
+      "autor": "Andrzej Sapkowski",
+      "obraz": "https://s.lubimyczytac.pl/upload/books/240000/240310/1114358-352x500.jpg",
+      "wydawnictwo": "superNOWA",
+      "data_wydania": "2014-09-25",
+      "liczba_stron": 332,
+      "opis": "Później mówiono, że człowiek ów nadszedł od północy, od Bramy Powroźniczej. Nie był stary, ale włosy miał zupełnie białe. Kiedy ściągnął płaszcz, okazało się, że na pasie za plecami ma miecz.\nBiałowłosego przywiodło do miasta królewskie orędzie: trzy tysiące orenów nagrody za odczarowanie nękającej mieszkańców Wyzimy strzygi.\nTakie czasy nastały. Dawniej po lasach jeno wilki wyły, teraz namnożyło się rozmaitego paskudztwa – gdzie spojrzysz, tam upiory, bazyliszki, diaboły, żywiołaki, wiły i utopce plugawe. A i niebacznie uwolniony z amfory dżinn, potrafiący zamienić życie spokojnego miasta w koszmar, się trafi.\nTu nie wystarczą zwykłe czary ani osinowe kołki. Tu trzeba zawodowca.\nWIEDŹMINA.\nMistrza magii i miecza. Tajemną sztuką wyuczonego, by strzec na świecie moralnej i biologicznej równowagi.",
+      "gatunki": "fantasy, przygoda, sensacja",
+      "ocena": "8",
+      "recenzja": "Super"
+    },
+    {
+      "id": "2",
+      "isbn": "9780141046303",
+      "tytul": "Assassin's Creed",
+      "autor": "Oliver Bowden",
+      "obraz": "https://ecsmedia.pl/c/renesans-assassin-s-creed-tom-1-b-iext162724496.jpg",
+      "wydawnictwo": "Penguin UK",
+      "data_wydania": "2009-11-26",
+      "liczba_stron": 414,
+      "opis": "'I will seek Vengeance upon those who betrayed my family. I am Ezio Auditore da Firenze. I am an Assassin...' Betrayed by the ruling families of Italy, a young man embarks upon an epic quest for vengeance. To eradicate corruption and restore his family's honour, he will learn the art of the assassins. Along the way, Ezio will call upon the wisdom of such great minds as Leonardo Da Vinci and Niccolo Machiavelli - knowing that survival is bound to the skills by which he must live. To his allies, he will become a force for change - fighting for freedom and justice. To his enemies, he will become a threat dedicated to the destruction of the tyrants abusing the people of Italy. So begins an epic story of power, revenge and conspiracy. TRUTH WILL BE WRITTEN IN BLOOD",
+      "gatunki": "fantasy, przygoda",
+      "ocena": "-",
+      "recenzja": "Brak recenzji"
+    }
+  ]
+}

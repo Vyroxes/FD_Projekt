@@ -1,6 +1,7 @@
 import React from "react";
 
-const Main = ({
+const Main =
+({
     activePage,
     selectedBook,
     editBook,

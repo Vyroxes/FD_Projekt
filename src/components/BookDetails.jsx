@@ -1,4 +1,15 @@
-const BookDetails = ({ activePage, selectedBook, setSelectedBook, handleEditClick, handleReviewClick, handleDeleteClick, moveToCollection, moveToWishList }) => {
+const BookDetails =
+({
+    activePage,
+    selectedBook,
+    setSelectedBook,
+    handleEditClick,
+    handleReviewClick,
+    handleDeleteClick,
+    moveToCollection,
+    moveToWishList
+}) =>
+{
     if (!selectedBook) return null;
 
     return (
@@ -22,7 +33,7 @@ const BookDetails = ({ activePage, selectedBook, setSelectedBook, handleEditClic
                     <button onClick={() => setSelectedBook(null)}>Powrót</button>
                     <button onClick={() => handleEditClick(selectedBook)}>Edytuj</button>
                     <button onClick={() => handleReviewClick(selectedBook)}>Recenzja</button>
-					{activePage === "collection" && (
+                    {activePage === "collection" && (
                         <button onClick={() => moveToWishList(selectedBook)}>Przenieś do listy życzeń</button>
                     )}
                     {activePage === "list" && (

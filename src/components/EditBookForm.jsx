@@ -1,29 +1,36 @@
 import React from "react";
 
-const EditBookForm = ({ editBook, setEditBook, editBookInAPI, handleFileUpload, activePage }) =>
+const EditBookForm =
+({
+    editBook,
+    setEditBook,
+    editBookInAPI,
+    handleFileUpload,
+    activePage
+}) =>
 {
     const handleBookEdit = async () =>
     {
         const { title, author, genres, publisher, date, pages, isbn, desc, rate, review } = editBook;
-	
-		if (!title || !author || !genres || !publisher || !date || !pages || !isbn || !desc)
-		{
-			alert("Wszystkie pola muszą być wypełnione!");
-			return;
-		}
-	
-		const isWishList = activePage !== "collection";
-	
-		await editBookInAPI(editBook, isWishList);
-	
-		setEditBook(null);
+    
+        if (!title || !author || !genres || !publisher || !date || !pages || !isbn || !desc)
+        {
+            alert("Wszystkie pola muszą być wypełnione!");
+            return;
+        }
+    
+        const isWishList = activePage !== "collection";
+    
+        await editBookInAPI(editBook, isWishList);
+    
+        setEditBook(null);
     };
 
     return (
         <div className="edit-book">
             <div className="edit-book-form">
                 <h2>Edytuj książkę</h2>
-				<div className="input-row">
+                <div className="input-row">
                     <label>
                         Okładka (URL lub plik):
                         <input

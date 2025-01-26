@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-const AddBookForm = ({
+const AddBookForm =
+({
     addBook,
     setAddBook,
     addMethod,
@@ -11,9 +12,12 @@ const AddBookForm = ({
     addBookToAPI,
     setEditBook,
 	setAddMethod,
-}) => {
-    const validateForm = () => {
-        const requiredFields = [
+}) =>
+{
+    const validateForm = () =>
+	{
+        const requiredFields =
+		[
             addBook.title,
             addBook.author,
             addBook.genres,
@@ -24,20 +28,24 @@ const AddBookForm = ({
             addBook.desc,
         ];
 
-        if (requiredFields.some(field => !field)) {
+        if (requiredFields.some(field => !field))
+		{
             alert("Wszystkie pola muszą być wypełnione!");
             return false;
         }
 
-        if (!addBook.cover) {
+        if (!addBook.cover)
+		{
             addBook.cover = "unknown.jpg";
         }
 
         return true;
     };
 
-    const handleAddBook = async () => {
-        if (validateForm()) {
+    const handleAddBook = async () =>
+	{
+        if (validateForm())
+		{
             const isWishList = activePage !== "collection";
             const lastBookId = await getLastBookId(isWishList);
             const newBook = { ...addBook, id: (lastBookId + 1).toString() };

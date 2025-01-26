@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Main = ({
     activePage,
@@ -27,11 +27,11 @@ const Main = ({
 {
     return (
         <section>
-            {activePage !== 'home' && activePage !== 'contact' && !selectedBook && !editBook && !addBook && !reviewBook && (
+            {activePage !== "home" && activePage !== "contact" && !selectedBook && !editBook && !addBook && !reviewBook && (
                 <div className="search-section">
                     <div className="search-controls">
                         <button onClick={handleSortClick}>
-                            Sortuj ({sortMethod === 'title' ? 'Tytuł' : sortMethod === 'author' ? 'Autor' : 'Data dodania'})
+                            Sortuj ({sortMethod === "title" ? "Tytuł" : sortMethod === "author" ? "Autor" : "Data dodania"})
                         </button>
                         <input
                             type="text"
@@ -44,7 +44,7 @@ const Main = ({
                     <button className="search-section-add-button" onClick={handleAddClick}>Dodaj</button>
                 </div>
             )}
-            {activePage !== 'home' && activePage !== 'contact' && !selectedBook && !editBook && !addBook && !reviewBook && filterVisible && (
+            {activePage !== "home" && activePage !== "contact" && !selectedBook && !editBook && !addBook && !reviewBook && filterVisible && (
                 <div className="filter-section">
                     <div className="filter-controls">
                         <h3>Gatunki</h3>
@@ -95,7 +95,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="filter-controls">
-                        <h3>Data wydania</h3>
+                        <h3>Rok wydania</h3>
                         <div className="filter-item">
                             <label>
                                 Od:

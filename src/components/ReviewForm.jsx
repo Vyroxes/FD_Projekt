@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const ReviewForm = ({ selectedBook, setReviewBook, editBookInAPI, activePage }) => {
-    const [review, setReview] = useState({ rating: '', text: '' });
+    const [review, setReview] = useState({ rate: "", text: "" });
 
     useEffect(() => {
-        if (selectedBook && selectedBook.ocena && selectedBook.recenzja) {
+        if (selectedBook && selectedBook.rate && selectedBook.review) {
             setReview({
-                rating: selectedBook.ocena,
-                text: selectedBook.recenzja,
+                rate: selectedBook.rate,
+                text: selectedBook.review,
             });
         }
     }, [selectedBook]);
 
 	const handleDeleteReview = async () => {
         try {
-            const updatedBook = { ...selectedBook, ocena: '-', recenzja: 'Brak recenzji' };
+            const updatedBook = { ...selectedBook, rate: "-", review: "Brak recenzji" };
 
-            const isWishList = activePage !== 'collection';
+            const isWishList = activePage !== "collection";
             await editBookInAPI(updatedBook, isWishList);
 
             setReviewBook(false);
@@ -27,24 +27,24 @@ const ReviewForm = ({ selectedBook, setReviewBook, editBookInAPI, activePage }) 
 
     const handleBookReview = async () => {
         try {
-            if (!review.rating || !review.text.trim()) {
+            if (!review.rate || !review.text.trim()) {
                 alert("Wszystkie pola muszą być wypełnione!");
                 return;
             }
 
-            const isValidRating = (rating) => {
-                const parsedRating = parseFloat(rating);
+            const isValidRating = (rate) => {
+                const parsedRating = parseFloat(rate);
                 return !isNaN(parsedRating) && parsedRating >= 0 && parsedRating <= 10 && (parsedRating * 10) % 1 === 0;
             };
 
-            if (!isValidRating(review.rating)) {
-                alert("Ocena musi być liczbą od 0 do 10 z dokładnością maksymalnie do 0.1!");
+            if (!isValidRating(review.rate)) {
+                alert("Ocena musi być liczbą od 0 do 10 z dokładnością maksymalnie do jednego miejsca po przecinku!");
                 return;
             }
 
-            const updatedBook = { ...selectedBook, ocena: review.rating, recenzja: review.text };
+            const updatedBook = { ...selectedBook, rate: review.rate, review: review.text };
 
-            const isWishList = activePage !== 'collection';
+            const isWishList = activePage !== "collection";
             await editBookInAPI(updatedBook, isWishList);
 
             setReviewBook(false);
@@ -65,8 +65,8 @@ const ReviewForm = ({ selectedBook, setReviewBook, editBookInAPI, activePage }) 
                             step="0.1"
                             min="0"
                             max="10"
-                            value={review.rating}
-                            onChange={(e) => setReview({ ...review, rating: e.target.value })}
+                            value={review.rate}
+                            onChange={(e) => setReview({ ...review, rate: e.target.value })}
                         />
                     </label>
                 </div>

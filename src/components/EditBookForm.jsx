@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
-const EditBookForm = ({ editBook, setEditBook, editBookInAPI, activePage }) =>
+const EditBookForm = ({ editBook, setEditBook, editBookInAPI, handleFileUpload, activePage }) =>
 {
     const handleBookEdit = async () =>
     {
-        const { tytul, autor, gatunki, wydawnictwo, data_wydania, liczba_stron, isbn, opis, ocena, recenzja } = editBook;
+        const { title, author, genres, publisher, date, pages, isbn, desc, rate, review } = editBook;
 	
-		if (!tytul || !autor || !gatunki || !wydawnictwo || !data_wydania || !liczba_stron || !isbn || !opis)
+		if (!title || !author || !genres || !publisher || !date || !pages || !isbn || !desc)
 		{
 			alert("Wszystkie pola muszą być wypełnione!");
 			return;
 		}
 	
-		const isWishList = activePage !== 'collection';
+		const isWishList = activePage !== "collection";
 	
 		await editBookInAPI(editBook, isWishList);
 	
@@ -28,8 +28,8 @@ const EditBookForm = ({ editBook, setEditBook, editBookInAPI, activePage }) =>
                         Okładka (URL lub plik):
                         <input
                             type="text"
-                            value={editBook.obraz}
-                            onChange={e => setEditBook({ ...editBook, obraz: e.target.value })}
+                            value={editBook.cover}
+                            onChange={e => setEditBook({ ...editBook, cover: e.target.value })}
                         />
                     </label>
                     <label>
@@ -37,7 +37,7 @@ const EditBookForm = ({ editBook, setEditBook, editBookInAPI, activePage }) =>
                         <input
                             type="file"
                             accept="image/*"
-                            onChange={e => handleFileUpload(e.target.files[0])}
+                            onChange={e => handleFileUpload(e.target.files[0], "edit")}
                         />
                     </label>
                 </div>
@@ -46,16 +46,16 @@ const EditBookForm = ({ editBook, setEditBook, editBookInAPI, activePage }) =>
                         Tytuł:
                         <input
                             type="text"
-                            value={editBook.tytul}
-                            onChange={(e) => setEditBook({ ...editBook, tytul: e.target.value })}
+                            value={editBook.title}
+                            onChange={(e) => setEditBook({ ...editBook, title: e.target.value })}
                         />
                     </label>
                     <label>
                         Autor:
                         <input
                             type="text"
-                            value={editBook.autor}
-                            onChange={(e) => setEditBook({ ...editBook, autor: e.target.value })}
+                            value={editBook.author}
+                            onChange={(e) => setEditBook({ ...editBook, author: e.target.value })}
                         />
                     </label>
                 </div>
@@ -64,16 +64,16 @@ const EditBookForm = ({ editBook, setEditBook, editBookInAPI, activePage }) =>
                         Gatunki:
                         <input
                             type="text"
-                            value={editBook.gatunki}
-                            onChange={(e) => setEditBook({ ...editBook, gatunki: e.target.value })}
+                            value={editBook.genres}
+                            onChange={(e) => setEditBook({ ...editBook, genres: e.target.value })}
                         />
                     </label>
                     <label>
                         Wydawnictwo:
                         <input
                             type="text"
-                            value={editBook.wydawnictwo}
-                            onChange={(e) => setEditBook({ ...editBook, wydawnictwo: e.target.value })}
+                            value={editBook.publisher}
+                            onChange={(e) => setEditBook({ ...editBook, publisher: e.target.value })}
                         />
                     </label>
                 </div>
@@ -82,16 +82,16 @@ const EditBookForm = ({ editBook, setEditBook, editBookInAPI, activePage }) =>
                         Data wydania:
                         <input
                             type="date"
-                            value={editBook.data_wydania}
-                            onChange={(e) => setEditBook({ ...editBook, data_wydania: e.target.value })}
+                            value={editBook.date}
+                            onChange={(e) => setEditBook({ ...editBook, date: e.target.value })}
                         />
                     </label>
                     <label>
                         Liczba stron:
                         <input
                             type="number"
-                            value={editBook.liczba_stron}
-                            onChange={(e) => setEditBook({ ...editBook, liczba_stron: e.target.value })}
+                            value={editBook.pages}
+                            onChange={(e) => setEditBook({ ...editBook, pages: e.target.value })}
                         />
                     </label>
                 </div>
@@ -109,8 +109,8 @@ const EditBookForm = ({ editBook, setEditBook, editBookInAPI, activePage }) =>
                     <label>
                         Opis:
                         <textarea
-                            value={editBook.opis}
-                            onChange={(e) => setEditBook({ ...editBook, opis: e.target.value })}
+                            value={editBook.desc}
+                            onChange={(e) => setEditBook({ ...editBook, desc: e.target.value })}
                         />
                     </label>
                 </div>

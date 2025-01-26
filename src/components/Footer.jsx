@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () =>
 {
     return (
         <footer>
-            <p>Strona do zarządzania kolekcją książek stworzona przez Michała Ruska, Łukasza Iwańskiego i Michała Zająca</p>
+            <p>{new Date().getFullYear()}. Strona do zarządzania kolekcją książek stworzona przez Michała Ruska, Łukasza Iwańskiego i Michała Zająca</p>
         </footer>
     );
 };

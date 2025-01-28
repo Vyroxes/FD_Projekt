@@ -181,6 +181,7 @@ const App = () => {
 
   const deleteBookFromAPI = async (book, isWishList) => {
     try {
+      console.log("Usuwanie książki: ", book);
       const url = `${isWishList ? API_WISHLIST : API_COLLECTION}/${book.id}`;
       await fetch(url, {
         method: "DELETE",
@@ -196,7 +197,6 @@ const App = () => {
   };
 
   const handleDeleteClick = async (book) => {
-    console.log("Usuwanie książki: ", book);
     const isWishList = activePage !== "collection";
     await deleteBookFromAPI(book, isWishList);
     setSelectedBook(null);

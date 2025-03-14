@@ -1,1 +1,1 @@
-Projekt z Frontend developmentu - aplikacja do zarządzania kolekcją książek
+Projekt z przedmiotu frontend development - aplikacja do zarządzania kolekcją książek
